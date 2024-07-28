@@ -7,7 +7,7 @@ function App() {
 
   const getPosts = async () => {
     try {
-      const response = await fetch("http://localhost:8080/product")
+      const response = await fetch("https://spring-boot-rest-example.com/api/product")
       if (!response.ok) {
         throw Error(response.statusText)
       }
